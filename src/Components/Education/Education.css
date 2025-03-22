@@ -1,0 +1,222 @@
+/* Main Container */
+.education-container {
+    text-align: center;
+    padding: 60px 10%;
+    background: linear-gradient(90deg, #eae8e1 0%, #faf8f7 100%);
+    color: #d42e4f;
+    font-family: 'Lora', serif;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Section Title */
+.education-title, .section-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #a90e37;
+    font-weight: 700;
+    letter-spacing: 1px;
+    position: relative;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+
+/* Education Cards */
+.education-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.education-card {
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(15px);
+    border-radius: 15px;
+    padding: 20px;
+    width: 350px;
+    box-shadow: 0 6px 15px rgba(165, 29, 65, 0.3);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Hover Effects */
+.education-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(165, 29, 65, 0.4);
+}
+
+/* Floating Effect */
+.education-card::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: 30px;
+    height: 30px;
+    background: rgba(165, 29, 65, 0.5);
+    border-radius: 50%;
+    opacity: 0.5;
+    animation: floating 5s infinite ease-in-out;
+}
+
+/* Floating Animation */
+@keyframes floating {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+
+.education-card h2 {
+    color: #c13652;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.education-card h3 {
+    font-size: 1.2rem;
+    margin: 5px 0;
+    font-weight: 600;
+}
+
+.education-card p {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #D76C82;
+}
+
+/* Achievements & Coding Profiles List */
+.achievements-list {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.achievements-list li {
+    font-size: 1.2rem;
+    padding: 12px;
+    font-weight: 600;
+    color: #a51d41;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+/* Hover Effects */
+.achievements-list li:hover {
+    transform: scale(1.05);
+    background: rgba(165, 29, 65, 0.2);
+    box-shadow: 0 5px 15px rgba(165, 29, 65, 0.3);
+}
+
+
+/* Coding Profiles Links */
+.achievements-list a {
+    text-decoration: none;
+    color: #D76C82;
+    font-weight: bold;
+    display: block;
+    transition: color 0.3s ease-in-out;
+}
+
+.achievements-list a:hover {
+    color: #782222;
+    transform: scale(1.1);
+}
+
+/* Coding Profiles Section */
+.coding-profiles-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+    list-style: none;
+}
+
+/* Individual Coding Profile Items */
+.coding-profiles-list li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    border-radius: 100%;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Hover Effect */
+.coding-profiles-list li:hover {
+    cursor: pointer;
+    background: rgba(171, 12, 54, 0.4);
+    border-radius: 100%;
+    transform: scale(1.1);
+}
+
+/* Link Styling */
+.coding-profiles-list li a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+/* Profile Icons */
+.coding-icon {
+    width: 40px; /* Adjust as needed */
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+
+/* Icon Hover Effect */
+.coding-profiles-list li:hover .coding-icon {
+    transform: scale(1.2);
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .coding-icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .coding-profiles-list li {
+        padding: 10px;
+    }
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .education-container {
+        padding: 50px 5%;
+    }
+
+    .education-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .education-card {
+        width: 100%;
+    }
+
+    .achievements-list li {
+        font-size: 1rem;
+        padding: 10px;
+    }
+}

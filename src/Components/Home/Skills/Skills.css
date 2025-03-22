@@ -1,0 +1,110 @@
+.skills-container {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.skills-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #a51d41;
+    font-family: 'Lora', serif;
+    font-weight: 600;
+}
+
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.skill-bubble {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #D76C82;
+    box-shadow: 0px 5px 15px rgba(198, 76, 76, 0.8);
+    transition: transform 0.3s ease-in-out;
+    overflow: visible; /* Ensures tooltip is not clipped */
+    animation: float 3s ease-in-out infinite;
+    cursor: pointer;
+    text-align: center;
+}
+
+.skill-bubble:hover {
+    transform: scale(1.2);
+}
+
+/* Floating animation for bubbles */
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+    100% { transform: translateY(0); }
+}
+
+/* Assign different animation delays to each skill bubble */
+.skill-bubble:nth-child(1) { animation-delay: 0s; }
+.skill-bubble:nth-child(2) { animation-delay: 0.5s; }
+.skill-bubble:nth-child(3) { animation-delay: 1s; }
+.skill-bubble:nth-child(4) { animation-delay: 1.5s; }
+.skill-bubble:nth-child(5) { animation-delay: 2s; }
+.skill-bubble:nth-child(6) { animation-delay: 2.5s; }
+.skill-bubble:nth-child(7) { animation-delay: 3s; }
+.skill-bubble:nth-child(8) { animation-delay: 3.5s; }
+.skill-bubble:nth-child(9) { animation-delay: 4s; }
+.skill-bubble:nth-child(10) { animation-delay: 4.5s; }
+
+/* FontAwesome icon styles */
+.skill-bubble i {
+    margin-bottom: 5px;
+    font-size: 2rem;
+    color: white;
+    object-fit: contain;
+}
+
+/* Image styles for MongoDB & others */
+.skill-bubble img {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+    filter: brightness(0) invert(1);
+}
+
+/* Tooltip Styling */
+.tooltip {
+    position: absolute;
+    bottom: -20px; /* Positions below the skill bubble */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.95);
+    color: #782222;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+    z-index: 1;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Show tooltip on hover */
+.skill-bubble:hover .tooltip {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Media Queries for Responsive Design */
+@media (min-width: 768px) {
+    .skills-container{
+        padding: 60px 20px;
+        width: 90%;
+        margin: 0 auto;
+    }
+}

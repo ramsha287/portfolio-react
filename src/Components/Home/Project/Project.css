@@ -1,0 +1,209 @@
+/* Background with Linear Gradient */
+.project-container {
+    text-align: center;
+    padding: 40px 20px;
+    background: linear-gradient(90deg, #eae8e1 0%, #faf8f7 100%);
+    color: #a51d41;
+    font-family: 'Lora', serif;
+    font-weight: 600;
+}
+
+/* Title Styling */
+.project-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #a51d41;
+    font-family: 'Lora', serif;
+}
+
+/* Slider */
+.project-slider {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 20px;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    align-items: stretch;
+}
+
+.project-slider::-webkit-scrollbar {
+    display: none;
+}
+
+/* Project Card */
+.project-card {
+    flex: 0 0 250px;
+    min-width: 250px;
+    min-height: 250px;
+    max-height: 250px;
+    padding: 20px;
+    background-color: transparent;
+    border: 2px solid rgba(165, 29, 65, 0.4);
+    border-radius: 15px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    cursor: pointer;
+    box-shadow: 0px 5px 15px rgba(198, 76, 76, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+
+
+/* Project Card Content */
+.project-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    min-height: 60px;
+}
+
+.project-card p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #3D0301;
+    flex-grow: 1;
+    max-height: 120px; /* Prevents uneven height issues */
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* On Hover */
+/* On Hover - Bubble Effect */
+.project-card:hover {
+    background-color: rgba(165, 29, 65, 0.2);
+    transform: scale(1.05);
+    animation: bubbleFloat 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes bubbleFloat {
+    0% {
+        transform: translateY(0) scale(1.05);
+    }
+    100% {
+        transform: translateY(-10px) scale(1.05);
+    }
+}
+
+
+/* View Button at the Bottom */
+.project-card a {
+    display: block;
+    margin-top: auto;
+    padding: 8px 12px;
+    font-size: 14px;
+    background-color: #a51d41;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+
+.project-card a:hover {
+    background-color: #782222;
+}
+
+/* View All Button */
+.view-all-btn {
+    position: relative;
+    background-color: #B03052;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-right: 10px;
+    font-family: 'Lora', serif;
+    transition: all 0.2s ease;
+    overflow: visible;
+}
+
+.view-all-btn:active {
+    transform: scale(0.96);
+}
+
+.view-all-btn:before,
+.view-all-btn:after {
+    position: absolute;
+    content: "";
+    width: 150%;
+    left: 50%;
+    height: 100%;
+    transform: translateX(-50%);
+    z-index: 1;
+    background-repeat: no-repeat;
+}
+
+.view-all-btn:hover::before {
+    top: -70%;
+    background-image: radial-gradient(circle, #B03052 20%, transparent 20%),
+        radial-gradient(circle, transparent 20%, #B03052 20%, transparent 30%),
+        radial-gradient(circle, #B03052 20%, transparent 20%),
+        radial-gradient(circle, #B03052 20%, transparent 20%),
+        radial-gradient(circle, transparent 10%, #B03052 15%, transparent 20%),
+        radial-gradient(circle, #B03052 20%, transparent 20%),
+        radial-gradient(circle, #B03052 20%, transparent 20%),
+        radial-gradient(circle, #B03052 20%, transparent 20%),
+        radial-gradient(circle, #B03052 20%, transparent 20%);
+    background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%,
+        10% 10%, 18% 18%;
+    background-position: 50% 120%;
+    animation: greentopBubbles 0.6s ease forwards;
+}
+
+@keyframes greentopBubbles {
+    0% {
+        background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%,
+            40% 90%, 55% 90%, 70% 90%;
+    }
+
+    50% {
+        background-position: 0% 80%, 0% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%,
+            50% 50%, 65% 20%, 90% 30%;
+    }
+
+    100% {
+        background-position: 0% 70%, 0% 10%, 10% 30%, 20% -10%, 30% 20%, 22% 40%,
+            50% 40%, 65% 10%, 90% 20%;
+        background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+    }
+}
+
+.view-all-btn:hover::after {
+    bottom: -70%;
+    background-image: radial-gradient(circle, #B03052 20%, transparent 20%),
+        radial-gradient(circle, #B03052 20%, transparent 20%),
+        radial-gradient(circle, transparent 10%, #B03052 15%, transparent 20%),
+        radial-gradient(circle, #B03052 20%, transparent 20%),
+        radial-gradient(circle, #B03052 20%, transparent 20%),
+        radial-gradient(circle, #B03052 20%, transparent 20%),
+        radial-gradient(circle, #B03052 20%, transparent 20%);
+    background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 20% 20%, 18% 18%;
+    background-position: 50% 0%;
+    animation: greenbottomBubbles 0.6s ease;
+}
+
+@keyframes greenbottomBubbles {
+    0% {
+        background-position: 10% -10%, 30% 10%, 55% -10%, 70% -10%, 85% -10%,
+            70% -10%, 70% 0%;
+    }
+
+    50% {
+        background-position: 0% 80%, 20% 80%, 45% 60%, 60% 100%, 75% 70%, 95% 60%,
+            105% 0%;
+    }
+
+    100% {
+        background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%,
+            110% 10%;
+        background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+    }
+}
+
+
+

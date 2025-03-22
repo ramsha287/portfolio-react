@@ -1,0 +1,108 @@
+/* Projects Section */
+#projects {
+    text-align: center;
+    padding: 40px 20px;
+    background: linear-gradient(90deg, #eae8e1 0%, #faf8f7 100%);
+    color: #a51d41;
+    font-family: 'Lora', serif;
+    font-weight: 600;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Title Styling */
+.projects-title {
+    font-size: 2.5rem;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    color: #a51d41;
+    font-family: 'Lora', serif;
+}
+
+/* Projects Card Container */
+.projects-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Individual Project Cards */
+.project-glass {
+    background: rgba(255, 255, 255, 0.2); /* Semi-transparent glass effect */
+    backdrop-filter: blur(10px); /* Glass effect */
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 10px;
+    padding: 20px;
+    width: 270px;
+    text-align: center;
+    color: #782222;
+    font-family: 'Lora', serif;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Different Card Variants */
+.project-glass:nth-child(1) { background-color: #a51d41; color: white; } /* Deep Red */
+.project-glass:nth-child(2) { background-color: #782222; color: white; } /* Dark Maroon */
+.project-glass:nth-child(3) { background-color: #B03052; color: white; } /* Bold Pink */
+.project-glass:nth-child(4) { background-color: #a51d41; color: white; } /* Deep Red */
+.project-glass:nth-child(5) { background-color: #782222; color: white; } /* Dark Maroon */
+.project-glass:nth-child(6) { background-color: #B03052; color: white; } /* Bold Pink */
+.project-glass:nth-child(7) { background-color: #a51d41; color: white; } /* Deep Red */
+
+/* Project Card Text */
+.project-glass h3 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.project-glass p {
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+/* View Project Link */
+.project-glass a {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: white;
+    color: #a51d41;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.project-glass a:hover {
+    background-color: #782222;
+    color: white;
+}
+
+/* Hover Effects */
+.project-glass:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Blur effect on non-hovered cards */
+.projects-container:hover > .project-glass:not(:hover) {
+    filter: blur(6px);
+    transform: scale(0.9);
+}
