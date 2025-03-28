@@ -21,6 +21,8 @@ const projectsData = [
       "An AI-driven attendance system using facial recognition for automated entry logging.",
     link: "https://github.com/ramsha287/fras",
   },
+  { title: "Youtube Comment Analyzer", description: "Developed a Streamlit app to analyze YouTube comments. Used NLTK, TextBlob, and Scikit-learn for sentiment analysis, topic modeling, and classification. Integrated Plotly for interactive visualizations.", link: "https://github.com/ramsha287/youtubecommentanalyzer" },
+
   {
     title: "Currency Converter",
     description:
@@ -42,7 +44,7 @@ const projectsData = [
   {
     title: "Portfolio",
     description:
-      "A personal portfolio showcasing my projects, skills, and experience in AI and development.",
+      "A dynamic and responsive portfolio website built using React.js to showcase my skills and projects.",
     link: "https://github.com/ramsha287/portfolio-react",
   },
 ];
