@@ -41,13 +41,19 @@
 }
 
 /* Individual Project Cards */
+/* Individual Project Cards */
 .project-glass {
     background: rgba(255, 255, 255, 0.2); /* Semi-transparent glass effect */
-    backdrop-filter: blur(10px); /* Glass effect */
+    backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border-radius: 10px;
     padding: 20px;
-    width: 270px;
+    width: 300px;  /* Fixed width */
+    height: 250px; /* Fixed height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     text-align: center;
     color: #782222;
     font-family: 'Lora', serif;
@@ -55,6 +61,7 @@
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.3);
 }
+
 
 /* Different Card Variants */
 .project-glass:nth-child(1) { background-color: #a51d41; color: white; } /* Deep Red */
@@ -64,6 +71,7 @@
 .project-glass:nth-child(5) { background-color: #782222; color: white; } /* Dark Maroon */
 .project-glass:nth-child(6) { background-color: #B03052; color: white; } /* Bold Pink */
 .project-glass:nth-child(7) { background-color: #a51d41; color: white; } /* Deep Red */
+.project-glass:nth-child(8) { background-color: #782222; color: white; } /* Dark Maroon */
 
 /* Project Card Text */
 .project-glass h3 {
@@ -73,10 +81,14 @@
 }
 
 .project-glass p {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     font-weight: 400;
     margin-bottom: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
 }
+
 
 /* View Project Link */
 .project-glass a {

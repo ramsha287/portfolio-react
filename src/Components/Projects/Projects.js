@@ -21,7 +21,7 @@ const projectsData = [
       "An AI-driven attendance system using facial recognition for automated entry logging.",
     link: "https://github.com/ramsha287/fras",
   },
-  { title: "Youtube Comment Analyzer", description: "Developed a Streamlit app to analyze YouTube comments. Used NLTK, TextBlob, and Scikit-learn for sentiment analysis, topic modeling, and classification. Integrated Plotly for interactive visualizations.", link: "https://github.com/ramsha287/youtubecommentanalyzer" },
+  { title: "Youtube Comment Analyzer", description: "Developed a Streamlit app to analyze YouTube comments.Used NLTK,TextBlob,Scikit-learn,topic modeling and classification.", link: "https://github.com/ramsha287/youtubecommentanalyzer" },
 
   {
     title: "Currency Converter",
