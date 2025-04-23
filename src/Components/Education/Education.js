@@ -9,7 +9,7 @@ const educationData = [
     institution: "Jamia Millia Islamia",
     degree: "B.Tech in Electronics and Communication Engineering",
     year: "2022 - 2026",
-    score: "SPI - 8.42",
+    score: "SPI - 8.46",
   },
   {
     institution: "Allahabad Public School",

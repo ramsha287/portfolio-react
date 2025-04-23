@@ -1,8 +1,17 @@
 import React from "react";
 import "./Projects.css";
 
+const projectsData1 = [
+  {
+    title: "CarWorth",
+    description:
+      "Developed a Streamlit-based car price prediction app.Included similar car recommendations, price comparison, and fairness algorithms for accurate and equitable predictions.",
+    link: "https://github.com/ramsha287/carpricepredictionmodel",
+  },
+  { title: "Youtube Comment Analyzer", description: "Developed a Streamlit app to analyze YouTube comments.Used NLTK,TextBlob,Scikit-learn,topic modeling and classification.", link: "https://github.com/ramsha287/youtubecommentanalyzer" },
 
-const projectsData = [
+];
+const projectsData2 = [
   {
     title: "My Muse",
     description:
@@ -21,7 +30,6 @@ const projectsData = [
       "An AI-driven attendance system using facial recognition for automated entry logging.",
     link: "https://github.com/ramsha287/fras",
   },
-  { title: "Youtube Comment Analyzer", description: "Developed a Streamlit app to analyze YouTube comments.Used NLTK,TextBlob,Scikit-learn,topic modeling and classification.", link: "https://github.com/ramsha287/youtubecommentanalyzer" },
 
   {
     title: "Currency Converter",
@@ -53,9 +61,21 @@ const Projects = () => {
   return (
     
     <div id="projects">
-      <h1 className="projects-title">Projects</h1>
+      <h1 className="projects-title">AI/ML Projects</h1>
       <div className="projects-container">
-        {projectsData.map((project, index) => (
+        {projectsData1.map((project, index) => (
+          <div key={index} className="project-glass">
+            <h3>{project.title}</h3>
+            <p>{project.description}</p>
+            <a href={project.link} target="_blank" rel="noopener noreferrer">
+              View Project
+            </a>
+          </div>
+        ))}
+      </div>
+      <h1 className="projects-title">Web Development Projects</h1>
+      <div className="projects-container">
+        {projectsData2.map((project, index) => (
           <div key={index} className="project-glass">
             <h3>{project.title}</h3>
             <p>{project.description}</p>
