@@ -3,6 +3,18 @@ import "./Project.css";
 import { useNavigate } from "react-router-dom";
 
 const projectsData = [
+  {
+    title: "StyleMuse",
+    description:
+      "Style Muse is a full-stack E-commerce site built with the MERN stack, featuring JWT auth and Stripe payments.",
+    link: "https://github.com/ramsha287/StyleMuse",
+  },
+  {
+    title: "CarWorth",
+    description:
+      "Developed a Streamlit-based car price prediction app.Included similar car recommendations, price comparison, and fairness algorithms for accurate and equitable predictions.",
+    link: "https://github.com/ramsha287/carpricepredictionmodel",
+  },
     { title: "My Muse", description: "A full-stack blog application for seamless content creation, management, and sharing.", link: "https://github.com/ramsha287/Fullstack-Blog-Project" },
     { title: "Youtube Comment Analyzer", description: "Developed a Streamlit app to analyze YouTube comments. Used NLTK, TextBlob, and Scikit-learn for sentiment analysis, topic modeling, and classification. Integrated Plotly for interactive visualizations.", link: "https://github.com/ramsha287/youtubecommentanalyzer" },
     { title: "AI Chatbox", description: "An interactive chatbot powered by AI to assist users with real-time responses and automation.", link: "https://github.com/ramsha287/ai-chat-box" },

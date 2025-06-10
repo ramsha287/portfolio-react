@@ -9,9 +9,17 @@ const projectsData1 = [
     link: "https://github.com/ramsha287/carpricepredictionmodel",
   },
   { title: "Youtube Comment Analyzer", description: "Developed a Streamlit app to analyze YouTube comments.Used NLTK,TextBlob,Scikit-learn,topic modeling and classification.", link: "https://github.com/ramsha287/youtubecommentanalyzer" },
+  
 
 ];
 const projectsData2 = [
+  {
+    title: "StyleMuse",
+    description:
+      "Style Muse is a full-stack E-commerce site built with the MERN stack, featuring JWT auth and Stripe payments.",
+    link: "https://github.com/ramsha287/StyleMuse",
+  },
+
   {
     title: "My Muse",
     description:
