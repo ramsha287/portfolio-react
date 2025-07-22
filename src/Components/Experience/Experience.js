@@ -3,6 +3,27 @@ import "./Experience.css";
 
 const experiences = [
   {
+    title: "Software Development Intern",
+    company: "Multicloud, Marlborough, MA, USA",
+    duration: "June 2025 - Present",
+    description: [
+      "Contributing to the design and development of scalable software solutions.",
+      "Tested and validated REST APIs using Swagger UI and Postman, ensuring consistent and reliable integration",
+      "Assisting in deploying microservices on AWS; concurrently exploring Terraform, AMI, Ansible, and Linux for future automation.",
+    ],
+  },
+  {
+    title:"Research Intern",
+    company: "Jamia Millia Islamia",
+    duration: "June 2025 - Present",
+    description: [
+       "Conducting research on traffic congestion and urban mobility using geotagged Twitter data and NLP techniques.",
+        "Abstract titled ”Mapping and Analyzing Traffic Congestion in New Delhi using Social Media Data” accepted at ISPRS-ISDE Conference 2025.",
+        "Performing geocoding locally using Dockerized Nominatim setup for mapping tweet locations efficiently.",
+        "Currently co-authoring a full research paper for submission and presentation at the conference.",
+    ]
+  },
+  {
     title: "MLOps Intern",
     company: "EndorseSphere Ventures Private Limited",
     duration: "Nov 2024 - Jan 2025",

@@ -65,6 +65,17 @@ const projectsData2 = [
   },
 ];
 
+const projectsData3 = [
+  {
+    title: "NeuroBridge",
+    description:
+      "Designed for individuals with ADHD, Autism, and OCD Helping neurodivergent users manage daily tasks, routines, and emotional well-being through intelligent, adaptive tools.",
+    link: "https://github.com/filza2112/neurobridge",
+  },
+  
+
+];
+
 const Projects = () => {
   return (
     
@@ -84,6 +95,19 @@ const Projects = () => {
       <h1 className="projects-title">Web Development Projects</h1>
       <div className="projects-container">
         {projectsData2.map((project, index) => (
+          <div key={index} className="project-glass">
+            <h3>{project.title}</h3>
+            <p>{project.description}</p>
+            <a href={project.link} target="_blank" rel="noopener noreferrer">
+              View Project
+            </a>
+          </div>
+        ))}
+      </div>
+
+      <h1 className="projects-title">Collaborative Projects</h1>
+      <div className="projects-container">
+        {projectsData3.map((project, index) => (
           <div key={index} className="project-glass">
             <h3>{project.title}</h3>
             <p>{project.description}</p>
