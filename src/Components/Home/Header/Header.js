@@ -46,7 +46,7 @@ const Header = () => {
                 </h2>
                 <p>From Frontend Aesthetics to Backend Logic, to AI-Powered Intelligence – I Build, Optimize, and Innovate.</p>
                 <div className='social-icons'>
-                    <a href="https://drive.google.com/file/d/1Q9Lpnc7jNQgMCgs2OSbfSnfmJNnLJ3tf/view?usp=sharing"
+                    <a href="https://drive.google.com/drive/folders/1lDTWbXkIEwO3NGuPEgF9V-NKx3TIjSek?usp=sharing"
                         target="_blank"
                         rel="noopener noreferrer">
                         <button>Resume</button>
