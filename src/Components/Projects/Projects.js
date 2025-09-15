@@ -9,7 +9,7 @@ const projectsData1 = [
     link: "https://github.com/ramsha287/carpricepredictionmodel",
   },
   { title: "Youtube Comment Analyzer", description: "Developed a Streamlit app to analyze YouTube comments.Used NLTK,TextBlob,Scikit-learn,topic modeling and classification.", link: "https://github.com/ramsha287/youtubecommentanalyzer" },
-  { title: "LumiSkin" , description: "AI-powered skincare platform with CNN-based image analysis, real-time results, and personalized product recommendations."},
+  { title: "LumiSkin" , description: "AI-powered skincare platform with CNN-based image analysis, real-time results, and personalized product recommendations.", link:"https://github.com/ramsha287/LumiSkin" },
 
 ];
 const projectsData2 = [
