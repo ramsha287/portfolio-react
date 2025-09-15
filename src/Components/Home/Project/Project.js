@@ -3,6 +3,8 @@ import "./Project.css";
 import { useNavigate } from "react-router-dom";
 
 const projectsData = [
+  { title: "LumiSkin" , description: "AI-powered skincare platform with CNN-based image analysis, real-time results, and personalized product recommendations.", link:"https://github.com/ramsha287/LumiSkin"},
+
   {
     title: "StyleMuse",
     description:
