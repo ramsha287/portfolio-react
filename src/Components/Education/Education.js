@@ -52,6 +52,14 @@ const achievements = [
   },
 ];
 
+const publishedPapers = [ 
+  {
+    title: "Causal Analysis and Mapping of Urban Traffic Congestion using Geosocial Analytics",
+    link: "https://ieeexplore.ieee.org/document/11400260"
+  }
+];
+
+
 const codingProfiles = [
   { platform: "GitHub", link: "https://github.com/ramsha287" ,icon: githubIcon},
   { platform: "LeetCode", link: "https://leetcode.com/u/ramsha287/" ,icon: leetcodeIcon},
@@ -86,6 +94,19 @@ const Education = () => {
           </li>
         ))}
       </ul>
+
+      {/* Published Papers Section */}
+      <h2 className="section-title">Published Papers</h2>
+      <ul className="papers-list">
+        {publishedPapers.map((paper, index) => (
+          <li key={index}>
+            <a href={paper.link} target="_blank" rel="noopener noreferrer">
+              {paper.title}
+            </a>
+          </li>
+        ))}
+      </ul>
+
 
       {/* Coding Profiles Section */}
       <h2 className="section-title">Coding Profiles</h2>
