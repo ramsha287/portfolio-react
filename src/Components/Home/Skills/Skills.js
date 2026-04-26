@@ -22,7 +22,11 @@ const skillsData = [
     { name: "Scikit-learn", icon: "fa-solid fa-brain" },
     { name: "TensorFlow", icon: "fa-solid fa-project-diagram" },
     { name: "Keras", icon: "fa-solid fa-network-wired" },
-    { name: "PyTorch", icon: "fa-solid fa-microchip" }
+    { name: "PyTorch", icon: "fa-solid fa-microchip" },
+    { name: "AWS", icon: "fa-brands fa-aws" },
+    { name: "Linux", icon: "fa-brands fa-linux" },
+    { name: "Docker", icon: "fa-brands fa-docker" },
+    
 ];
 
 const Skills = () => {

@@ -7,38 +7,36 @@ const experiences = [
     company: "Multicloud, Marlborough, MA, USA",
     duration: "June 2025 - Present",
     description: [
-      "Contributing to the design and development of scalable software solutions.",
-      "Tested and validated REST APIs using Swagger UI and Postman, ensuring consistent and reliable integration",
-      "Assisting in deploying microservices on AWS; concurrently exploring Terraform, AMI, Ansible, and Linux for future automation.",
+      "Contributed to AI security initiatives by supporting the integration of enterprise AI services such as AI Gateway, Batch Redaction, and Exposure Lens.",
+      "Worked on backend workflows, API integrations, and cloud-based deployments to improve reliability, scalability, and secure service operations on AWS.",
+      "Collaborated with cross-functional AI, cloud, and product teams in an Agile environment; currently contributing to a technical white paper on Robotics Security.",
     ],
   },
   {
-    title:"Research Intern",
+    title: "Research Intern",
     company: "Jamia Millia Islamia",
     duration: "June 2025 - Present",
     description: [
-       "Conducting research on traffic congestion and urban mobility using geotagged Twitter data and NLP techniques.",
-        "Abstract titled ”Mapping and Analyzing Traffic Congestion in New Delhi using Social Media Data” accepted at ISPRS-ISDE Conference 2025.",
-        "Performing geocoding locally using Dockerized Nominatim setup for mapping tweet locations efficiently.",
-        "Currently co-authoring a full research paper for submission and presentation at the conference.",
+      "Designed an NLP pipeline to filter and classify traffic-related tweets from Twitter/X using VGI (Volunteered Geographic Information).",
+      "Built geospatial visualizations with QGIS and Dockerized Nominatim for local geocoding of Delhi NCR congestion hotspots.",
+      "Work published at IEEE DELCON 2025 (International Conference on Smart Technologies in Engineering).",
     ]
   },
-  {
-    title: "MLOps Intern",
-    company: "EndorseSphere Ventures Private Limited",
-    duration: "Nov 2024 - Jan 2025",
-    description: [
-      "Implemented machine learning workflows using Azure.",
-      "Worked on data annotations and Named Entity Recognition (NER) for better data preprocessing."
-    ],
-  },
+  // {
+  //   title: "MLOps Intern",
+  //   company: "EndorseSphere Ventures Private Limited",
+  //   duration: "Nov 2024 - Jan 2025",
+  //   description: [
+  //     "Implemented machine learning workflows using Azure.",
+  //     "Worked on data annotations and Named Entity Recognition (NER) for better data preprocessing."
+  //   ],
+  // },
   {
     title: "Summer Research Intern",
     company: "Malaviya National Institute of Technology (MNIT), Jaipur",
     duration: "June 2024 - July 2024",
     description: [
-      "Conducted research on brain tumor and breast cancer detection using CNNs with TensorFlow and Keras.",
-      "Developed CNN models to analyze medical images, improving early detection rates and diagnosis accuracy.",
+      "Conducted research on brain tumor detection using CNNs with TensorFlow and Keras.",
       "Applied advanced data preprocessing techniques like normalization, augmentation, and contrast adjustment.",
       "Achieved 93.6% accuracy with MobileNet and 99.1% ROC score."
     ],

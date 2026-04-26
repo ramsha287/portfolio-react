@@ -9,7 +9,7 @@ const educationData = [
     institution: "Jamia Millia Islamia",
     degree: "B.Tech in Electronics and Communication Engineering",
     year: "2022 - 2026",
-    score: "SPI - 8.46",
+    score: "SPI - 8.4",
   },
   {
     institution: "Allahabad Public School",
@@ -27,8 +27,8 @@ const educationData = [
 
 const achievements = [
   {
-    title: "Google Cloud Skills Boost Gold League Member",
-    link: "https://www.cloudskillsboost.google/public_profiles/61b36e3b-d3bd-43d9-adf4-d91f6c5dc2ab",
+    title: "AWS Certified Solutions Architect - Associate",
+    link: "https://www.credly.com/badges/0b16092c-a462-4874-b127-1b86e27df203/public_url",
   },
   {
     title: "Machine Learning Specialization",
@@ -45,6 +45,10 @@ const achievements = [
   {
     title: "Unsupervised Learning, Recommenders, Reinforcement Learning",
     link: "https://coursera.org/share/cf786a260cb6a6544b4a2f658f121d88",
+  },
+  {
+    title: "Google Cloud Skills Boost Gold League Member",
+    link: "https://www.cloudskillsboost.google/public_profiles/61b36e3b-d3bd-43d9-adf4-d91f6c5dc2ab",
   },
 ];
 

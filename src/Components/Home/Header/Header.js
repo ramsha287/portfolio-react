@@ -34,23 +34,23 @@ const Header = () => {
                 <h2>I'm a {" "}
                     <TypeAnimation
                         sequence={[
-                            'MERN Stack Developer', 1000,
-                            'Frontend Developer', 1000,
-                            'Backend Developer', 1000,
-                            'AI/ML Enthusiast', 1000,
+                          'Software Engineer', 1000,
+                            'Backend & Cloud Engineer', 1000,
+                            'Full Stack Developer', 1000,
+                            'AWS Certified Solutions Architect - Associate', 1000,
                         ]}
                         speed={50}
                         repeat={Infinity}
                         wrapper="span"
                     />
                 </h2>
-                <p>From Frontend Aesthetics to Backend Logic, to AI-Powered Intelligence – I Build, Optimize, and Innovate.</p>
+                <p>Python • React • Node.js • AWS • Machine Learning</p>
                 <div className='social-icons'>
-                    <a href="https://drive.google.com/drive/folders/1lDTWbXkIEwO3NGuPEgF9V-NKx3TIjSek?usp=sharing"
+                    {/* <a href="https://drive.google.com/drive/folders/1lDTWbXkIEwO3NGuPEgF9V-NKx3TIjSek?usp=sharing"
                         target="_blank"
                         rel="noopener noreferrer">
                         <button>Resume</button>
-                    </a>
+                    </a> */}
                     <a href="https://github.com/ramsha287" target="_blank" rel="noopener noreferrer">
                         <i className="fab fa-github"></i>
                     </a>
