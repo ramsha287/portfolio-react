@@ -140,14 +140,14 @@
     transform: scale(1.1);
 }
 
-.published-papers-list {
+.papers-list {
     list-style: none;
     padding: 0;
     text-align: center;
     margin-top: 20px;
 }
 
-.published-papers-list li {
+.papers-list li {
     font-size: 1.2rem;
     padding: 12px;
     font-weight: 600;
@@ -158,7 +158,7 @@
 }
 
 /* Hover Effects */
-.published-papers-list li:hover {
+.papers-list li:hover {
     transform: scale(1.05);
     background: rgba(165, 29, 65, 0.2);
     box-shadow: 0 5px 15px rgba(165, 29, 65, 0.3);
